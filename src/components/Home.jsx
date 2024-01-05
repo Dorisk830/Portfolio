@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroImage from '../assets/heroImage.png';
+import Profile from '../assets/profile.png';
 import { IoIosArrowForward } from 'react-icons/io';
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
         </div>
         <div>
           <img
-            src={HeroImage}
+            src={Profile}
             alt='my profile'
             className='rounded-2xl mx-auto w-2/3 md:w-full'
           />
