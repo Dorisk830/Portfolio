@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
+import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-scroll'
 
 const NavBar = () => {
     const [nav, setNav] = useState(false)
@@ -28,9 +29,10 @@ const NavBar = () => {
         },
     ];
     return (
-        <div className='flex justify-between items-center px-5 w-full h-20 text-white bg-black fixed'>
+        <div className='flex justify-between items-center px-5 w-full h-20 text-cyan-400
+         bg-black fixed'>
             <div>
-                <h1 className='text-5xl font-signature ml-10'>Adorry</h1>
+                <h1 className='text-6xl font-signature ml-10'>Doris Jeptoo</h1>
             </div>
             <ul className='hidden md:flex'>
 
@@ -38,9 +40,11 @@ const NavBar = () => {
                 {links.map(({ id, link }) => (
                     <li
                         key={id}
-                        className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200'
+                        className='px-4 cursor-pointer capitalize font-large text-cyan-400 hover:scale-105 duration-500'
                     >
-                        {link}
+                        <Link to={link} smooth duration={500}>
+                            {link}
+                        </Link>
                     </li>
 
                 ))}
@@ -52,21 +56,21 @@ const NavBar = () => {
 
             {nav && (
                 <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-grey-500'>
-                {links.map(({ id, link }) => (
+                    {links.map(({ id, link }) => (
                         <li
                             key={id}
                             className='px-4 cursor-pointer capitalize py-6 text-4xl'
                         >
                             {link}
                         </li>
-    
-                    ))}                       
-    
+
+                    ))}
+
                 </ul>
-            )}            
+            )}
         </div>
 
     );
 };
 
-export default NavBar
+export default NavBar;
