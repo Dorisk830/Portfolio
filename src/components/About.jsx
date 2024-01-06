@@ -9,7 +9,7 @@ const About = () => {
                 </div>
                 <p className='text-l py-3'>
                     I'm a passionate full-stack developer with a strong foundation in web technologies.
-                    My expertise includes HTML, CSS, React, Node.js, JavaScript, and I love crafting user interfaces with the power of Tailwind CSS
+                    My expertise includes HTML,CSS,ReactJS, NodeJS,Javascript,Python,SQL and Flask. and I love crafting user interfaces with the power of Tailwind CSS
                     I enjoy turning ideas into reality by building scalable and efficient applications.
                 </p>
                 <br />
