@@ -2,13 +2,13 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div name='about' className='w-full h-full bg-gradient-to-b from-gray-800 to-black text-white'>
+        <div name='about' className='w-screen h-full bg-gradient-to-b from-gray-800 to-black text-white'>
             <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-centre w-full h-full'>
                 <div className='pb-8'>
                     <p className='text-4xl font-bold inline border-b-4 border-gray-500'>About</p>
                 </div>
                 <p className='text-l py-3'>
-                    Hello, I'm a passionate full-stack developer with a strong foundation in web technologies.
+                    I'm a passionate full-stack developer with a strong foundation in web technologies.
                     My expertise includes HTML, CSS, React, Node.js, JavaScript, and I love crafting user interfaces with the power of Tailwind CSS
                     I enjoy turning ideas into reality by building scalable and efficient applications.
                 </p>
